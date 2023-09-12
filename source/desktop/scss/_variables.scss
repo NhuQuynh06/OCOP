@@ -1,0 +1,65 @@
+// html global
+html {
+  font-size: 65.2% !important;
+}
+
+$body-bg: #fff;
+$body-color: #343A40;
+$font-family-sans-serif: "SF", Arial, Helvetica, sans-serif;
+$font-family-serif: "SF", Arial, Helvetica, sans-serif;
+$font-family-branch: "Oswald", Arial, Helvetica, sans-serif;
+$font-size-base: 1.4rem;
+
+
+// add color to color maps
+$primary: #c31e40;
+$secondary: #ffdb4c;
+$third: #212529;
+$title: #212529;
+$summary : rgba(0, 0, 0, 0.86);
+$border-color: rgba(0, 0, 0, 0.05);
+$hover: $primary;
+
+$gutter-body : 16px;
+
+// Color default
+$white : #fff !default;
+$gray-200: #F7F7F7 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+// Fonts-weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-semibolder: 800;
+
+// Breakpoint for responsive
+
+$md :768px;
+$lg :1024px;
+$xl: 1280px;
+$xxl : 1366px;
+
+// 768px
+:root {
+  --gutter: 20px;
+  --container: 730px;
+}
+
+// 1024px
+@media (min-width: $lg) {
+  :root {
+    --container: 980px;
+  }
+}
+
+// 1280px
+@media (min-width: $xl) {
+  :root {
+    --gutter: 30px;
+    --container: 1170px;
+  }
+}

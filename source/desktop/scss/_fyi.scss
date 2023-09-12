@@ -1,0 +1,36 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: var(--gutter);
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner_show:not(:last-child) {
+        margin-bottom: var(--gutter);
+    }
+}
+
+.fyi-position {
+    margin-bottom: var(--gutter);
+
+    &+div {
+        margin-bottom: var(--gutter);
+    }
+}
+
+.banner-wrap .banner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: initial;
+    min-height: 90px;
+    margin-bottom: var(--gutter);
+
+    .banner_show {
+        margin-bottom: 0;
+    }
+}
