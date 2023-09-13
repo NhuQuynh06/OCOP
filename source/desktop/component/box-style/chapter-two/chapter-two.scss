@@ -1,0 +1,106 @@
+.chapter-two {
+    background: #fff;
+    @include title-sapo;
+
+    .sapo {
+        margin-bottom: 38px;
+    }
+
+    .filter {
+        background: url(../img/bg1.png) center center no-repeat;
+        padding: 35px 0 30px;
+        margin-bottom: 40px;
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .item {
+            height: 220px;
+            display: grid;
+            gap: 30px;
+            align-content: end;
+
+            img {
+                margin: 0 auto;
+            }
+
+            select {
+                border-radius: 6px;
+                background: var(--gray-white, #FFF);
+                padding: 10px 50px 10px 15px;
+                color: var(--gray-700, #495057);
+                font-family: "PoppinsZ";
+                font-size: 14px;
+                font-weight: $font-weight-medium;
+                line-height: 150%;
+                border: none;
+                outline: none;
+                text-align: right;
+                width: 100%;
+                height: 40px;
+            }
+        }
+    }
+
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 23px;
+
+        .story {
+            &__thumb {
+                width: 270px;
+                height: 270px;
+                float: left;
+                margin-right: 30px;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            &__heading {
+                margin-bottom: 8px;
+                margin-top: 20px;
+
+                a {
+                    color: var(--gray-900, #212529);
+                    font-family: "PoppinsZ";
+                    font-size: 18px;
+                    font-weight: $font-weight-medium;
+                    line-height: 130%;
+                }
+            }
+
+            .time {
+                color: var(--gray-500, #ADB5BD);
+                font-family: "PoppinsZ";
+                font-size: 12px;
+                line-height: 150%;
+                margin-bottom: 8px;
+            }
+
+            &__summary {
+                color: var(--gray-700, #495057);
+                font-family: "PoppinsZ";
+                font-size: 14px;
+                line-height: 150%;
+                margin-top: 8px;
+            }
+
+            &:nth-child(4n + 1),
+            &:nth-child(4n + 2) {
+                .story__thumb {
+                    float: right;
+                    margin-left: 30px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .more-news {
+        margin-top: 60px;
+    }
+}

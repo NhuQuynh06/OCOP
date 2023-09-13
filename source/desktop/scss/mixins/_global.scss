@@ -1,23 +1,26 @@
-@mixin title {
-    .title {
-        font-size: 24px;
-        text-transform: uppercase;
-        color: $title;
-        line-height: 1.3;
-        font-weight: $font-weight-bold;
-        padding-left: 15px;
-        position: relative;
-        display: block;
+@mixin title {}
 
-        &::before {
-            position: absolute;
-            content: "";
-            width: 5px;
-            height: 100%;
-            background: $primary;
-            left: 0;
-            top: 0;
-        }
+@mixin title-sapo {
+    .title {
+        color: #5B8C51;
+        text-align: center;
+        text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+        font-family: "UTM Kabel KT";
+        font-size: 80px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+    }
+
+    .sapo {
+        color: var(--gray-800, #343A40);
+        text-align: center;
+        font-family: "PoppinsZ";
+        font-size: 16px;
+        text-align: center;
+        line-height: 28px;
+        max-width: 780px;
+        margin: 0 auto;
     }
 }
 

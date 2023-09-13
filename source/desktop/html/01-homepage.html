@@ -12,13 +12,12 @@
     <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css" />
   </head>
 
-  <body>
+  <body class="home-page">
     <!-- site header -->
-    <!-- @@include('../component/header/header.html') -->
+    @@include('../component/header/header.html')
 
     <!-- site body -->
     <div class="site-body">
-
       <div class="list-chapter">
         <p class="item" data="chapter-one">1</p>
         <p class="item" data="chapter-two">2</p>
@@ -27,15 +26,30 @@
         <p class="item" data="chapter-five">5</p>
       </div>
 
-      <div class="chapter-one"></div>
-      <div class="chapter-two"></div>
-      <div class="chapter-three"></div>
-      <div class="chapter-four"></div>
-      <div class="chapter-five"></div>
+      <div
+        class="chapter-one"
+        style="
+          background-image: url(https://source.unsplash.com/featured/1920x1311?sig=1);
+        "
+      >
+        @@include('../component/box-style/chapter-one/chapter-one.html')
+      </div>
+      <div class="chapter-two">
+        @@include('../component/box-style/chapter-two/chapter-two.html')
+      </div>
+      <div class="chapter-three">
+        @@include('../component/box-style/chapter-three/chapter-three.html')
+      </div>
+      <div class="chapter-four">
+        @@include('../component/box-style/chapter-four/chapter-four.html')
+      </div>
+      <div class="chapter-five">
+        @@include('../component/box-style/chapter-five/chapter-five.html')
+      </div>
     </div>
     <div class="back-to-top"></div>
     <!-- site footer -->
-    <!-- @@include('../component/footer/footer.html') -->
+    @@include('../component/footer/footer.html')
 
     <!-- JS Global Compulsory-->
     <script src="../js/jquery-3.1.1.js"></script>

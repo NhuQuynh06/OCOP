@@ -1,0 +1,68 @@
+.chapter-three {
+    background: url(../img/bg2.jpg) top center/100% auto no-repeat;
+    padding: 268px 0 245px;
+
+    @include title-sapo;
+
+    .sapo {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .wrap {
+        border-radius: 5px;
+        background: rgba(255, 255, 255, .8);
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, .15);
+        padding: 15px 20px 20px;
+        width: 310px;
+        margin: -45px auto 0;
+        z-index: 1;
+        position: relative;
+    }
+
+    .story {
+        &__thumb {
+            height: 245px;
+        }
+
+        &__heading {
+            margin-bottom: 12px;
+
+            a {
+                color: var(--gray-900, #212529);
+                text-align: center;
+                font-family: "PoppinsZ";
+                font-size: 18px;
+                font-weight: $font-weight-medium;
+            }
+        }
+
+        &__summary {
+            color: var(--gray-700, #495057);
+            text-align: center;
+            font-family: "PoppinsZ";
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .title-cate {
+            color: var(--ocop-primary, #5B8C51);
+            text-align: center;
+            display: block;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: $font-weight-semibold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    }
+
+    .more-news {
+        margin-top: 50px;
+    }
+}

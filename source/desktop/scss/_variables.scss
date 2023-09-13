@@ -4,7 +4,7 @@ html {
 }
 
 $body-bg: #fff;
-$body-color: #343A40;
+$body-color: #212529;
 $font-family-sans-serif: "SF", Arial, Helvetica, sans-serif;
 $font-family-serif: "SF", Arial, Helvetica, sans-serif;
 $font-family-branch: "Oswald", Arial, Helvetica, sans-serif;
@@ -12,15 +12,14 @@ $font-size-base: 1.4rem;
 
 
 // add color to color maps
-$primary: #c31e40;
-$secondary: #ffdb4c;
+$primary: #FFCD1E;
+$secondary: #5B8C51;
 $third: #212529;
 $title: #212529;
-$summary : rgba(0, 0, 0, 0.86);
+$summary : #6C757D;
 $border-color: rgba(0, 0, 0, 0.05);
 $hover: $primary;
-
-$gutter-body : 16px;
+$gutter-body : 20px;
 
 // Color default
 $white : #fff !default;
@@ -45,8 +44,8 @@ $xxl : 1366px;
 
 // 768px
 :root {
-  --gutter: 20px;
-  --container: 730px;
+  --gutter: 30px;
+  --container: 730px; 
 }
 
 // 1024px
@@ -59,7 +58,6 @@ $xxl : 1366px;
 // 1280px
 @media (min-width: $xl) {
   :root {
-    --gutter: 30px;
-    --container: 1170px;
+     --container: 1170px;
   }
 }

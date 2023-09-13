@@ -13,6 +13,7 @@
     &__thumb {
         background: $gray-200;
         border-radius: 6px;
+        overflow: hidden;
 
         @media (max-width: $lg) {
             height: inherit;
