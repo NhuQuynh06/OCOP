@@ -5,9 +5,9 @@ html {
 
 $body-bg: #fff;
 $body-color: #212529;
-$font-family-sans-serif: "SF", Arial, Helvetica, sans-serif;
-$font-family-serif: "SF", Arial, Helvetica, sans-serif;
-$font-family-branch: "Oswald", Arial, Helvetica, sans-serif;
+$font-family-sans-serif: "PoppinsZ", Arial, Helvetica, sans-serif;
+$font-family-serif: "PoppinsZ", Arial, Helvetica, sans-serif;
+$font-family-branch: "UTMKabelKT", Arial, Helvetica, sans-serif;
 $font-size-base: 1.4rem;
 
 
@@ -17,7 +17,7 @@ $secondary: #5B8C51;
 $third: #212529;
 $title: #212529;
 $summary : #6C757D;
-$border-color: rgba(0, 0, 0, 0.05);
+$border-color: #E9ECEF;
 $hover: $primary;
 $gutter-body : 20px;
 
@@ -45,7 +45,7 @@ $xxl : 1366px;
 // 768px
 :root {
   --gutter: 30px;
-  --container: 730px; 
+  --container: 730px;
 }
 
 // 1024px
@@ -58,6 +58,6 @@ $xxl : 1366px;
 // 1280px
 @media (min-width: $xl) {
   :root {
-     --container: 1170px;
+    --container: 1170px;
   }
 }

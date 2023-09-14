@@ -1,0 +1,48 @@
+.four-pack {
+    margin-bottom: 23px;
+
+    .box-heading {
+        margin-bottom: 15px;
+    }
+
+    .title {
+        color: var(--gray-900, #212529);
+        font-family: "PoppinsZ";
+        font-size: 24px;
+        font-weight: $font-weight-medium;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+
+    .box-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--gutter);
+    }
+
+    .story {
+        text-align: center;
+
+        &__thumb {
+            height: 270px;
+            margin-bottom: 15px;
+        }
+
+        &__heading a {
+            color: var(--ocop-primary, #5B8C51);
+            text-align: center;
+            font-family: "PoppinsZ";
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        .title-cate {
+            color: var(--gray-500, #ADB5BD);
+            font-family: "PoppinsZ";
+            font-size: 16px;
+            line-height: 130%;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+    }
+}

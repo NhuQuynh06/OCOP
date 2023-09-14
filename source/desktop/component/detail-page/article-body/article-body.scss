@@ -1,64 +1,72 @@
 @import './zce-common-body.scss';
 
-// ----------------------------------
-// INFO : style các box ngoài bài viết
-// ----------------------------------
-// style tags
+.zce-content-body {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+
+    >* {
+        color: var(--gray-800, #343A40);
+        font-family: "PoppinsZ";
+        font-size: 18px;
+        line-height: 160%;
+    }
+}
+
 .article__tag {
     display: flex;
     align-items: center;
+    gap: 16px;
 
     .title {
-        font-weight: $font-weight-medium;
+        color: #000;
+        font-family: "PoppinsZ";
         font-size: 15px;
-        line-height: 24px;
+        font-weight: $font-weight-medium;
+        line-height: 160%;
         text-transform: uppercase;
-        color: #000000;
     }
 
     .box-content {
-        margin-left: 16px;
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
 
         >* {
-            border: 1px solid #DEE2E6;
-            border-radius: 8px;
-            padding: 11px 8px;
-            font-weight: 400;
+            color: var(--gray-700, #495057);
+            font-family: "PoppinsZ";
             font-size: 15px;
-            line-height: 8px;
-            color: #212529;
-            margin-left: 8px;
+            line-height: 160%;
+            padding: 4px 12px;
+            border-radius: 16px;
+            transition: 0.3s all;
 
-            &:hover {
-                color: $primary;
-            }
-
-            &:first-child {
-                margin-left: 0;
+            &:hover,
+            &.active {
+                color: #fff;
+                background: var(--ocop-primary, #5B8C51);
             }
         }
     }
 }
 
 .article__source {
-    background: #f8f9fa;
-    padding: 9px 12px;
-    line-height: 1.4;
+    display: flex;
+    gap: 10px;
 
     .name {
-        font-weight: $font-weight-medium;
+        color: var(--gray-800, #343A40);
+        font-family: "PoppinsZ";
         font-size: 14px;
-        line-height: 20px;
-        color: #495057;
-        display: inline;
+        font-weight: $font-weight-medium;
+        line-height: 145%;
+        min-width: 95px;
     }
 
     .text {
-        font-weight: $font-weight-normal;
-        line-height: 20px;
-        color: #6c757d;
+        color: var(--ocop-primary, #5B8C51);
+        font-family: "PoppinsZ";
+        line-height: 160%;
         font-size: 14px;
     }
 }

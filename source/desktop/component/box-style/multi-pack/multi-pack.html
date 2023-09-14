@@ -1,5 +1,19 @@
 <div class="multi-pack">
-    @@for (var i = 0; i < 10; i++) { 
-        @@include('../story/story.html') 
-    } 
+  @@for (var i = 0; i < 10; i++) {
+  <article class="story">
+    <figure class="story__thumb">
+      <a href="" title=""> <img src="https://source.unsplash.com/featured/270x180?sig=1" alt="(3x2)" /></a>
+    </figure>
+    <h5 class="story__heading">
+      <a href="#">
+        Official Gazette issues Nos 09-12/2022, available on April 28, 2022
+      </a>
+    </h5>
+    <div class="story__summary">
+      Decree No. 02/2022/ND-CP of January 6, 2022, detailing a number of
+      articles of the Law on Real Estate Business
+    </div>
+  </article>
+  }
+  <button class="more-news">xem thêm</button>
 </div>

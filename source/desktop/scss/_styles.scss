@@ -142,3 +142,30 @@ a:hover {
         margin-bottom: 0;
     }
 }
+
+.home-page {
+    .site-body {
+        margin-top: -60px;
+    }
+}
+
+// icon
+.ic-star {
+    background: url(../img/star.png) center center/20px no-repeat;
+    width: 20px;
+    height: 20px;
+
+    &::before {
+        display: none;
+    }
+}
+
+.ic-star-normal {
+    background: url(../img/star-normal.png) center center/20px no-repeat;
+    width: 20px;
+    height: 20px;
+
+    &::before {
+        display: none;
+    }
+}

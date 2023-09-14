@@ -19,7 +19,7 @@
 
 @import '../component/header/header.scss';
 @import '../component/footer/footer.scss';
-@import '../component/breadcrumbs/breadcrumbs.scss';
+@import '../component/breadcrumb/breadcrumb.scss';
 @import '../component/search-tags/search-tags.scss';
 @import '../component/modal/modal.scss';
 @import '../component/error/error.scss';
@@ -47,7 +47,8 @@
 // @import '../component/box-style/abf-homepage/abf-homepage.scss';
 // @import '../component/box-style/topics/topics.scss';
 // @import '../component/box-style/multimedia/multimedia.scss';
-// @import '../component/box-style/multi-pack/multi-pack.scss';
+@import '../component/box-style/multi-pack/multi-pack.scss';
+@import '../component/box-style/related-news/related-news.scss';
 // @import '../component/box-style/story/story.scss';
 // @import '../component/box-style/abf-cate/abf-cate.scss';
 // @import '../component/box-style/suggest/suggest.scss';
@@ -58,3 +59,6 @@
 @import '../component/box-style/chapter-three/chapter-three.scss';
 @import '../component/box-style/chapter-four/chapter-four.scss';
 @import '../component/box-style/chapter-five/chapter-five.scss';
+@import '../component/box-style/product/product.scss';
+@import '../component/box-style/four-pack/four-pack.scss';
+@import '../component/box-style/product-briefing/product-briefing.scss';

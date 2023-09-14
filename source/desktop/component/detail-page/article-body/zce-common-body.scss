@@ -649,69 +649,76 @@
 
     // style article-relate 
     .article-relate {
-        @include title;
-        @include story;
+        .story {
+            &__thumb {
+                width: 200px;
+                height: 130px;
+                float: left;
+                margin-right: 20px;
+            }
+
+            &__heading {
+                margin-bottom: 5px;
+
+                a {
+                    color: var(--gray-800, #343A40);
+                    font-family: "PoppinsZ";
+                    font-size: 20px;
+                    font-weight: $font-weight-medium;
+                    line-height: 145%;
+                }
+            }
+
+
+            &__summary {
+                color: var(--gray-600, #6C757D);
+                font-family: "PoppinsZ";
+                font-size: 15px;
+                line-height: 150%;
+            }
+        }
     }
 
     // style related-topic
     .related-topic {
-        padding: 20px;
-        box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.1);
+        border: 1px solid #DDD;
+        padding: 0 26px 26px;
 
-        @media (min-width: $xl) {
-            width: 50%;
-            float: right;
+        .box-heading {
+            margin-bottom: 20px;
         }
 
         .title {
-            font-weight: $font-weight-semibold;
-            font-size: 20px;
-            line-height: 30px;
+            background: var(--ocop-primary, #5B8C51);
+            color: #FFF;
+            font-size: 16px;
             text-transform: uppercase;
-            color: #212529;
-            padding-bottom: 8px;
-            border-bottom: 1px solid $primary;
-            margin-bottom: 15px;
+            padding: 4px 12px;
+        }
 
-            &:hover {
-                color: $primary !important;
-            }
+        .box-content {
+            display: grid;
+            gap: 12px;
         }
 
         .story {
-            margin-top: $gutter-body;
-            padding-top: $gutter-body;
-            border-top: 1px solid #E9ECEF;
-
-            &:first-child {
-                margin-top: 0;
-                padding-top: 0;
-                border-top: none;
-
-                .story__thumb {
-                    float: left;
-                    margin-right: 15px;
-                }
-            }
-
-            &__thumb {
-                width: 120px;
-                height: 80px;
-            }
 
             &__heading a {
+                color: var(--gray-800, #343A40);
+                font-size: 16px;
                 font-weight: $font-weight-semibold;
-                font-size: 17px;
-                line-height: 25px;
-                color: #343A40;
-                padding: 0;
-
-
+                line-height: 20px;
+                padding-left: 20px;
+                position: relative;
 
                 &::before {
-                    display: none;
+                    position: absolute;
+                    content: ">";
+                    color: $secondary;
+                    left: 0;
                 }
             }
+
         }
 
     }
@@ -760,30 +767,32 @@
 
     // style author
     .article__author {
-        font-weight: $font-weight-medium;
-        font-size: 17px;
-        line-height: 25px;
-        color: #343A40;
+        color: var(--gray-800, #343A40);
         text-align: right;
+        font-family: "PoppinsZ";
+        font-size: 20px;
+        font-weight: $font-weight-semibold;
+        line-height: 145%;
     }
 
     // blockquote
     blockquote {
         font-weight: 600;
-        padding: 50px $gutter-body $gutter-body;
+        padding: 35px 20px 30px;
         line-height: 1.5;
         position: relative;
-        background-color: rgba(var(--primary-rgba), 0.2);
-        border-radius: 0 30px 0 30px;
+        border: 2px solid var(--ocop-primary, #5B8C51);
+        background: #FFF;
+        margin-top: 30px !important;
 
         &::before {
             position: absolute;
             content: "";
-            width: 80px;
-            height: 40px;
-            left: 20px;
-            top: -12px;
-            background: url(../img/quote.png) center center/80px no-repeat;
+            width: 75px;
+            height: 36px;
+            left: 6px;
+            top: -25px;
+            background: #fff url(../img/quote.png) center center/52px no-repeat;
         }
 
         .author {
@@ -800,16 +809,15 @@
 
     // notebox
     .notebox {
-        background: #FFF3CD;
-        border: 2px dashed #FFC107;
         border-radius: 8px;
-        padding: 24px;
+        border: 1px dashed var(--green-300, #75B798);
+        background: var(--green-100, #D1E7DD);
+        padding: 20px;
     }
 
     // poll-box
     .poll-box {
-        background: #FFFFFF;
-        box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--ocop-primary, #5B8C51);
         padding: 20px;
         display: block;
         text-align: left;
@@ -818,27 +826,28 @@
 
         .box-heading {
             >* {
-                font-weight: 400;
-                font-size: 14px;
-                color: #343A40;
+                font-family: "PoppinsZ";
+                font-size: 20px;
+                font-weight: $font-weight-bold;
+                text-transform: uppercase;
             }
         }
 
         .box-content {
-            margin-top: 15px;
+            margin-top: 2px;
 
             .desc {
-                font-weight: 500;
-                font-size: 19px;
+                color: var(--gray-700, #495057);
+                font-family: "PoppinsZ";
+                font-size: 16px;
+                line-height: 21px;
             }
 
             label {
                 cursor: pointer;
-                background: #F8F9FA;
                 border-radius: 4px;
-                padding: 12px;
                 display: block;
-                margin-top: 8px;
+                margin-top: 6px;
                 font-weight: $font-weight-normal;
                 font-size: 16px;
                 line-height: 20px;
@@ -867,7 +876,7 @@
             }
 
             .btn-send {
-                background: $primary;
+                background: $secondary;
                 color: #fff;
             }
 

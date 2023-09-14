@@ -1,25 +1,26 @@
-// SF Compact Rounded : bold, regular, semibold
+// UTMKabelKT : bold
 @font-face {
-    font-family: "SF";
-    src: url("../fonts/SFCompactRounded/SF-Pro-Rounded-Semibold.otf");
+    font-family: "UTM Kabel KT";
+    src: url("../fonts/UTMKabelKT/UTMKabelKT.ttf");
+    font-weight: 700;
+}
+
+
+// PoppinsZ : regular, medium, semibold
+@font-face {
+    font-family: "PoppinsZ";
+    src: url("../fonts/PoppinsZ/PoppinsZSemiBold.ttf");
     font-weight: 600;
 }
 
 @font-face {
-    font-family: "SF";
-    src: url("../fonts/SFCompactRounded/SF-Pro-Rounded-Medium.otf");
+    font-family: "PoppinsZ";
+    src: url("../fonts/PoppinsZ/PoppinsZMedium.ttf");
     font-weight: 500;
 }
 
 @font-face {
-    font-family: "SF";
-    src: url("../fonts/SFCompactRounded/SF-Pro-Rounded-Regular.otf");
-    font-weight: 400;
-}
-
-// Oswald : regular
-@font-face {
-    font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-Regular.ttf");
+    font-family: "PoppinsZ";
+    src: url("../fonts/PoppinsZ/PoppinsZ.ttf");
     font-weight: 400;
 }

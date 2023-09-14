@@ -1,0 +1,61 @@
+.related-news {
+    background: url(../img/item11.png) top center/100% auto no-repeat;
+    padding-top: 30px;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .title {
+        color: #5B8C51;
+        font-family: "UTM Kabel KT";
+        font-size: 40px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        background: url(../img/item10.png) center bottom -10px/70px no-repeat;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+
+    .sapo {
+        color: var(--gray-800, #343A40);
+        text-align: center;
+        font-family: "PoppinsZ";
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .story {
+        &__thumb {
+            height: 180px;
+            margin-bottom: 15px;
+        }
+
+        &__heading {
+            margin-bottom: 12px;
+
+            a {
+                color: var(--gray-900, #212529);
+                font-family: "PoppinsZ";
+                font-size: 20px;
+                font-weight: $font-weight-medium;
+            }
+        }
+
+
+        &__summary {
+            color: var(--gray-700, #495057);
+            font-family: "PoppinsZ";
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .box-heading,
+    .more-news {
+        grid-column: 1/5;
+    }
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NAME</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css" />
+  </head>
+
+  <body class="product-detail">
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+      <div class="container">
+        <div class="breadcrumb">
+          <h2 class="main"><a href="">Sản phẩm</a></h2>
+          <h2><a href="">Thực phẩm</a></h2>
+        </div>
+        @@include('../component/box-style/product-briefing/product-briefing.html')
+        @@include('../component/box-style/four-pack/four-pack.html')
+      </div>
+      @@include('../component/box-style/related-news/related-news.html')
+    </div>
+    <div class="back-to-top"></div>
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/ui.js"></script>
+  </body>
+</html>

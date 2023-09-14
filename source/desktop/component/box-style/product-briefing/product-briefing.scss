@@ -1,0 +1,142 @@
+.product-briefing {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 60px;
+    margin-bottom: 90px;
+
+    .infor {
+        >.title {
+            color: var(--gray-black, #000);
+            font-family: "PoppinsZ";
+            font-size: 36px;
+            font-weight: $font-weight-semibold;
+            line-height: 130%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .text {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+
+        .title {
+            color: var(--gray-900, #212529);
+            font-family: "PoppinsZ";
+            font-size: 14px;
+            font-weight: $font-weight-semibold;
+            line-height: 130%;
+            text-transform: uppercase;
+        }
+
+        .des {
+            color: var(--gray-700, #495057);
+            font-family: "PoppinsZ";
+            font-size: 14px;
+            line-height: 130%;
+        }
+    }
+
+    .share {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            color: var(--gray-900, #212529);
+            font-family: "PoppinsZ";
+            font-size: 14px;
+            font-weight: $font-weight-semibold;
+            line-height: 130%;
+            text-transform: uppercase;
+        }
+    }
+
+    .text,
+    .sapo,
+    .share {
+        margin-top: var(--gutter);
+        padding-top: var(--gutter);
+        border-top: 1px solid $border-color;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    >* {
+        width: 36px;
+        height: 36px;
+        font-size: 0;
+    }
+
+    .fb {
+        background: #3B5998;
+    }
+
+    .yt {
+        background: #03A5FA;
+    }
+
+    .x {
+        background: #00ACEE;
+    }
+
+    .email {
+        background: var(--gray-600, #6C757D);
+    }
+
+}
+
+.nav-tabs {
+    margin-bottom: 52px;
+
+    .tab-pane {
+        display: none;
+
+
+        >* {
+            color: var(--gray-900, #212529);
+            font-family: "PoppinsZ";
+            line-height: 160%;
+        }
+
+        &.active {
+            display: grid;
+            gap: 10px;
+        }
+
+        img {
+            margin-top: 30px;
+        }
+
+        img+p {
+            margin-top: 30px;
+        }
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+
+        a {
+            color: var(--gray-400, #CED4DA);
+            font-family: "PoppinsZ";
+            font-size: 24px;
+            font-weight: $font-weight-semibold;
+            line-height: 130%;
+            padding-bottom: 12px;
+            display: block;
+            cursor: pointer;
+
+            &.active {
+                color: var(--gray-900, #212529);
+                border-bottom: 1px solid #000;
+            }
+        }
+    }
+}
