@@ -1,22 +1,7 @@
 .chapter-one {
     position: relative;
     padding-bottom: 360px;
-
-    // &::before {
-    //     position: absolute;
-    //     content: "";
-    //     width: 100%;
-    //     height: 100%;
-    //     background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.00) 14.27%);
-    // }
-
-    // &::after {
-    //     position: absolute;
-    //     content: "";
-    //     width: 100%;
-    //     height: 100%;
-    //     background: linear-gradient(180deg, rgba(146, 221, 131, 0.20) 8.74%, rgba(146, 221, 131, 0.00) 100%);
-    // }
+    background: url(../img/bg4.jpg) top center no-repeat;
 
     .container {
         display: grid;

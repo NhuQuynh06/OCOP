@@ -79,7 +79,7 @@
 .home-page {
     .site-header {
         &::before {
-            background: linear-gradient(180deg, rgba(0, 0, 0, .7) 0, rgba(0, 0, 0, 0) 100.27%);
+            display: none;
         }
     }
 }

@@ -40,6 +40,7 @@
             padding: 4px 12px;
             border-radius: 16px;
             transition: 0.3s all;
+            background: var(--gray-100, #F8F9FA);
 
             &:hover,
             &.active {
@@ -68,5 +69,58 @@
         font-family: "PoppinsZ";
         line-height: 160%;
         font-size: 14px;
+    }
+}
+
+.article__meta.social {
+    border-top: 1px solid var(--gray-200, #E9ECEF);
+    border-bottom: 1px solid var(--gray-200, #E9ECEF);
+    padding: 16px 0;
+    justify-content: inherit;
+
+    .fb {
+        margin-left: auto;
+    }
+}
+
+.related-news {
+    border: 1px solid #DDD;
+    background: #FFF;
+    padding: 24px 33px 33px 33px;
+
+    .box-heading {
+        margin-bottom: 16px;
+    }
+
+    .title {
+        color: #212529;
+        font-family: "PoppinsZ";
+        font-size: 20px;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+    }
+
+    .box-content {
+        display: grid;
+        gap: 12px;
+    }
+
+    .story {
+        &__heading a {
+            color: var(--gray-800, #343A40);
+            font-family: "PoppinsZ";
+            font-size: 16px;
+            font-weight: $font-weight-medium;
+            line-height: 20px;
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: ">";
+                color: var(--ocop-primary, #5B8C51);
+                left: 0;
+            }
+        }
     }
 }

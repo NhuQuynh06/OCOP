@@ -1,0 +1,33 @@
+.list-news {
+    @include title;
+
+    .box-heading {
+        margin-bottom: 15px;
+    }
+
+    .story {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        &__thumb {
+            width: 80px;
+            height: 80px;
+            float: right;
+            margin-left: 20px;
+        }
+
+        &__heading a {
+            color: var(--gray-900, #212529);
+            font-family: "PoppinsZ";
+            font-size: 16px;
+            font-weight: $font-weight-medium;
+        }
+    }
+}

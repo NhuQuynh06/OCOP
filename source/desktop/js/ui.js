@@ -33,3 +33,19 @@ $(".nav-tabs .link a").click(function (e) {
   $navTabContent.find(".tab-pane").removeClass("active");
   $(".nav-tabs .content ." + chosenTab).addClass("active");
 });
+
+// swiper
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+});

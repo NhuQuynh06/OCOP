@@ -1,4 +1,26 @@
-@mixin title {}
+@mixin title {
+    .box-heading {
+        .title {
+            color: var(--ocop-primary, #5B8C51);
+            font-family: "UTM Kabel KT";
+            font-size: 24px;
+            text-transform: uppercase;
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: var(--gutter);
+            align-items: end;
+
+            &::after {
+                position: relative;
+                content: "";
+                right: 0;
+                background: url(../img/item10.png) center center/70px no-repeat;
+                width: 70px;
+                height: 18px;
+            }
+        }
+    }
+}
 
 @mixin title-sapo {
     .title {

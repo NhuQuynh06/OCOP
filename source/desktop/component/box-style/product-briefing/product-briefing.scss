@@ -1,8 +1,76 @@
 .product-briefing {
     display: grid;
-    grid-template-columns: 1fr 450px;
+    grid-template-columns: 660px 1fr;
     gap: 60px;
     margin-bottom: 90px;
+
+    .product-img {
+        display: flex;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: 80px 560px;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 560px !important;
+            height: 560px;
+        }
+
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 560px;
+            width: 100%;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 100% !important;
+            height: 100%;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--gray-200, #E9ECEF);
+            cursor: pointer;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            border: 1px solid var(--ocop-primary, #5B8C51);
+        }
+
+        .swiper.mySwiper {
+            .swiper-wrapper {
+                display: block !important;
+                height: auto !important;
+            }
+        }
+
+    }
 
     .infor {
         >.title {
@@ -84,6 +152,7 @@
         background: #00ACEE;
     }
 
+    .print,
     .email {
         background: var(--gray-600, #6C757D);
     }
